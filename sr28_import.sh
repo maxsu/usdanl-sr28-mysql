@@ -41,7 +41,7 @@ mysql -u${MYSQL_USR} -p${MYSQL_PWD} -e "USE usdanlsr28; LOAD DATA INFILE '${HOME
 mysql -u${MYSQL_USR} -p${MYSQL_PWD} -e "USE usdanlsr28; LOAD DATA INFILE '${HOME}/NUT_DATA.txt' INTO TABLE NUT_DATA FIELDS TERMINATED BY '^' ENCLOSED BY '\~';" &&
 
 echo "USDA National Nutrient Database imported successfully"
-rm *.txt *.zip 
+rm *.txt *.zip *.pdf
 echo "Clean up complete."
 
 # run test query
